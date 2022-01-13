@@ -1,0 +1,32 @@
+@import './sideMenu.scss';
+@import './dashboardContent.scss';
+@import './dashboardSectionTitle.scss';
+
+.dashboard-float-menu-wrapper {
+    position: fixed;
+    top: 130px;
+    left: 0;
+    z-index: 6;
+    background-color: $color-light-theme;
+    color: $color-white;
+    border-radius: 0 6px 6px 0;
+    padding: 1.5vw;
+    opacity: 0.7;
+}
+.dashboard-float-menu {
+    .ant-menu-item-selected {
+        background-color: $color-light-theme !important;
+        color: $color-white;
+        box-shadow: 3px 3px 10px rgba($color-black, 0.5);
+    }
+
+    .ant-menu-item::after,
+    ul {
+        border-right: 0px;
+    }
+
+    .ant-menu-submenu-active,
+    .ant-menu-submenu-title:hover {
+        color: $color-light-theme;
+    }
+}

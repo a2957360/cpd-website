@@ -1,0 +1,28 @@
+.rectangle {
+    height: 1rem;
+
+    &--small {
+        width: 3rem;
+    }
+
+    &--large {
+        width: 10rem;
+    }
+
+    &--size-12 {
+        width: 12rem;
+    }
+
+
+    &--light {
+        background-color: $color-light-theme;
+    }
+
+    &--dark {
+        background-color: $color-dark-theme;
+    }
+
+    &--animated {
+        
+    }
+}

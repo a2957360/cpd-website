@@ -1,0 +1,37 @@
+.text-input {
+    display: flex;
+    flex-direction: row;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+    }
+
+    &--grey {
+        border: none;
+        background-color: $color-light-grey-1;
+        color: $color-light-grey-3;
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &--white {
+        border: 1px solid $color-light-grey-2;
+        background-color: $color-white;
+        color: $color-light-grey-2;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $color-light-grey-2;
+            background-color: $color-white;
+            box-shadow: none;
+        }
+    }
+
+    &--width-25 {
+        max-width: 25rem;
+    }
+}

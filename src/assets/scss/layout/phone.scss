@@ -1,0 +1,5 @@
+.phone-size-hide {
+  @include respond(phone) {
+    display: none;
+  }
+}

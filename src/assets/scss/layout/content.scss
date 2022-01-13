@@ -1,0 +1,20 @@
+// responsive content container
+.content-container {
+    width: 90%;
+    min-height: 80vh;
+    @include respond(large-desktop) {
+        width: 75%;
+    }
+
+    @include respond(desktop) {
+        width: 75%;
+    }
+
+    @include respond(tablet) {
+        width: 95%;
+    }
+
+    @include respond(phone) {
+        width: 95%;
+    }
+}

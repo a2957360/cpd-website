@@ -1,0 +1,39 @@
+.dashboard-wrapper {
+    background-color: $color-white;
+
+    .dashboard-side-menu-wrapper {
+        background-color: $color-white;
+        margin-left: 0.3vw;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        ul {
+            border-width: 0;
+        }
+
+        .ant-layout-sider-trigger {
+            width: auto !important;
+            position: unset !important;
+            background-color: $color-light-theme;
+        }
+
+        .side-menu-item {
+            transition: transform 0.5s ease-in-out;
+
+            &:hover {
+                background-color: $color-light-theme;
+                color: $color-white;
+                box-shadow: 3px 3px 5px $color-dark-grey-1;
+                transform: scale(1.03, 1.03);
+            }
+        }
+
+        .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+            background-color: $color-light-theme;
+            color: $color-white;
+            // box-shadow: 3px 3px 5px $color-dark-grey-1;
+        }
+    }
+}

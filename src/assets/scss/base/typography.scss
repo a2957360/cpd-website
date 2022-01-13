@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+//font-size, font-weight
+body {
+  font-family: 'Poppins', 'Lato', sans-serif;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.fs-6 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-6;
+}
+
+.fs-8 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-8;
+}
+
+.fs-10 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-10;
+}
+
+.fs-12 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-12;
+}
+
+.fs-13 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-13;
+}
+
+.fs-14 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-14;
+}
+
+.fs-15 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-15;
+}
+
+.fs-16 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-16;
+}
+
+.fs-17 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-17;
+}
+
+.fs-18 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-18;
+}
+
+.fs-20 {
+  font-family: '-webkit-pictograph';
+
+  font-size: $font-size-20;
+}
+
+.fs-22 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-22;
+}
+
+.fs-24 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-24;
+}
+
+.fs-25 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-25;
+}
+.fs-26 {
+  font-family: '-webkit-pictograph';
+  font-size: $font-size-26;
+}
+
+.fs-28 {
+  font-size: $font-size-28;
+}
+
+.fs-30 {
+  font-size: $font-size-30;
+}
+
+.fs-40 {
+  font-size: $font-size-40;
+}
+
+.fs-50 {
+  font-size: $font-size-50;
+}
+
+.fs-60 {
+  font-size: $font-size-60;
+}
+
+.fs-70 {
+  font-size: $font-size-70;
+}
+
+.fs-80 {
+  font-size: $font-size-80;
+}
+
+.fw-300 {
+  font-weight: $font-weight-300;
+}
+
+.fw-400 {
+  font-weight: $font-weight-400;
+}
+
+.fw-600 {
+  font-weight: $font-weight-600;
+}
+
+.fw-800 {
+  font-weight: $font-weight-600;
+}
+
+.fw-900 {
+  font-weight: $font-weight-900;
+}
+
+.line-height-10 {
+  line-height: 1rem;
+}
+
+.line-height-20 {
+  line-height: 2rem;
+}
+
+.line-height-25 {
+  line-height: 2.5rem;
+}
+
+.line-height-30 {
+  line-height: 3rem;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 3px;
+}
+
+.p-lines {
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  &-2-lh-25 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    max-height: 5rem;
+    -webkit-line-clamp: 2;
+  }
+
+  &-2-lh-20 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    max-height: 4rem;
+    -webkit-line-clamp: 2;
+  }
+
+  &-3-lh-20 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    max-height: 4.5rem;
+    -webkit-line-clamp: 3;
+  }
+}

@@ -1,0 +1,90 @@
+//bg-image
+.bg-image {
+  background-size: cover;
+  background-position: right;
+  position: relative;
+
+  &--certificate {
+    background-image: linear-gradient(to right bottom, rgba($color-dark-grey-2, 0.5), rgba($color-dark-grey-2, 0.5)),
+      url('../../img/other/bg-certificate.png');
+  }
+  &--instructor-detail {
+    background-image: linear-gradient(to right bottom, rgba($color-dark-grey-2, 0.5), rgba($color-dark-grey-2, 0.5)),
+      url('../../img/courseview.jpg') ;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  &--instructor {
+    background-image: linear-gradient(to right bottom, rgba($color-dark-grey-2, 0.5), rgba($color-dark-grey-2, 0.5)),
+      url('../../img/other/bg-instructor.png');
+  }
+
+  &--point {
+    background-image: url('../../img/bg-points.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 58% 20%;
+  }
+
+  &--card {
+    background-image: url('../../img/img-card.png');
+    height: 11.2rem;
+    width: 16rem;
+  }
+}
+
+//bg-color
+.bg-primary {
+  background-color: $color-primary !important;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+.bg-black {
+  background-color: $color-black;
+}
+
+.bg-light-grey-1 {
+  background-color: $color-light-grey-1;
+}
+
+.bg-light-theme {
+  background-color: $color-light-theme;
+
+  &--event {
+    background: linear-gradient($color-light-theme 85%, $color-white 85%);
+  }
+
+  &--course-unowned {
+    background: linear-gradient(
+      195deg,
+      $color-light-theme 0%,
+      $color-light-theme 70vh,
+      $color-light-theme 70vh,
+      $color-white 70vh,
+      $color-white 100%
+    );
+  }
+
+  &--course-owned {
+    background: linear-gradient(
+      180deg,
+      $color-light-theme 0%,
+      $color-light-theme 30vh,
+      $color-light-theme 30vh,
+      $color-white 30vh,
+      $color-white 100%
+    );
+  }
+}
+
+.bg-dark-theme {
+  background-color: $color-dark-theme;
+}
+
+.bg-transparent {
+  background-color: unset;
+}

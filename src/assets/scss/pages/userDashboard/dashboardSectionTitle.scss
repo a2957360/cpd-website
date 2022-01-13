@@ -1,0 +1,20 @@
+.dashboard-section-title-wrapper {
+    margin-top: 2vw;
+
+    .dashboard-section-title-container {
+        border-radius: 20px 20px 0px 0px;
+        padding: 0 2%;
+        max-width: 50%;
+        // width: 16vw;
+        // min-width: 250px;
+
+        @media screen and (max-width: 767px) {
+            border-radius: 18px 18px 0px 0px;
+            padding: 0 4%;
+        }
+    }
+
+    .dashboard-section-title-info-container {
+        max-width: 45%;
+    }
+}

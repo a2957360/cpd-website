@@ -1,0 +1,114 @@
+.other-customer-review-wrapper {
+  // background: linear-gradient(15deg, $color-light-theme 0%, $color-light-theme 47%, white 47%, white 100%);
+  background: linear-gradient(230deg, $color-light-theme 29%, $color-light-theme 70%, $color-dark-theme 47%, $color-dark-theme 70%);
+
+  // .other-about-review-wrapper {
+  //   background: linear-gradient(
+  //     195deg,
+  //     $color-light-theme 0%,
+  //     $color-light-theme 47%,
+  //     white 47%,
+  //     white 10%
+  //   );
+  // }
+
+  .home-customer-review-title-wrapper {
+    width: 62.5%;
+    margin: 0 auto 0;
+    padding-top: 15vh;
+    padding-bottom: 2vh;
+    // height: 50vh;
+    background-image: url("../../../img/dot-grid-hor.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 20vw 30%;
+    background-size: 20% 20%;
+    // background-color: red;
+    @media screen and (max-width: 767px) {
+      width: 90%;
+      background-position: 0 30%;
+      background-size: 50% 20%;
+    }
+
+    .home-customer-review-subtitle {
+      width: 60%;
+
+      @media screen and (max-width: 767px) {
+        width: 80%;
+      }
+    }
+  }
+
+  .home-customer-review-container {
+    width: 62.5%;
+    height: 25vw;
+    margin: 2% auto;
+
+    &:nth-last-of-type(1) {
+      padding-right: 5%;
+      margin-top: -15vh;
+    }
+
+    .home-customer-review-cover-container {
+      width: 23vw;
+      height: 23vw;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        width: 23vw;
+        height: 23vw;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in;
+
+        &:hover {
+          transform: scale(1.1, 1.1);
+        }
+      }
+    }
+
+    .home-customer-review-divider {
+      width: 0;
+      height: 10px;
+      background-color: $color-light-theme;
+      transition: width 0.3s ease-in;
+
+      &:nth-of-type(even) {
+        direction: rtl;
+      }
+    }
+
+    &:hover {
+      .home-customer-review-divider {
+        width: 5vw;
+      }
+    }
+  }
+
+  .home-review-container-mobile {
+    width: 80%;
+    margin: 0 auto;
+
+    .home-review-image-container {
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in;
+
+        &:hover {
+          transform: scale(1.1, 1.1);
+        }
+      }
+    }
+
+    // .about-review {
+    //   width: 80%;
+    //   margin: 0 auto;
+    // }
+  }
+}

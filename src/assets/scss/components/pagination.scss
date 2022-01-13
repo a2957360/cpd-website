@@ -1,0 +1,17 @@
+.ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link {
+    border-color: $color-light-theme;
+}
+
+.ant-pagination-item {
+    &:hover {
+        border-color: $color-light-theme;
+        color: $color-light-theme;
+    }
+}
+
+.ant-pagination-item-active {
+    border-color: $color-light-theme;
+    color: $color-light-theme;
+}

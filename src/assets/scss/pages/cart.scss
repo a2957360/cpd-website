@@ -1,0 +1,86 @@
+.add-cart-card {
+    cursor: pointer;
+
+    .cart-image-container {
+        position: relative;
+
+        .cart-image {
+            height: 12rem;
+            width: auto;
+            border-radius: $border-radius-8;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .cart-content-container {
+        .cart-title {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: wrap;
+        }
+
+        .cart-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: wrap;
+            min-height: 5.5rem;
+        }
+    }
+}
+
+
+.cart-card {
+    border: 1px solid $color-light-grey-1;
+    cursor: pointer;
+
+    .cart-image-container {
+        position: relative;
+
+        .cart-image {
+            height: 15rem;
+            width: auto;
+            border-top-left-radius: $border-radius-8;
+            border-bottom-left-radius: $border-radius-8;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .cart-content-container {
+        .cart-title {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: wrap;
+        }
+
+        .cart-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: wrap;
+            min-height: 5.5rem;
+        }
+    }
+}
+
+.one-line-title {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+}

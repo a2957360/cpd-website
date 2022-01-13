@@ -1,0 +1,15 @@
+.ant-radio-checked .ant-radio-inner{
+    border-color: $color-light-theme !important ;
+  }
+  
+  .ant-radio-checked .ant-radio-inner:after{
+    background-color: $color-light-theme;
+  }
+  
+  .ant-radio:hover .ant-radio-inner {
+    border-color: $color-light-theme ;
+  }
+
+  .ant-radio-checked .ant-radio-inner:focus{
+    border-color: $color-light-theme;
+  }

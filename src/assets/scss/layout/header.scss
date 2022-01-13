@@ -1,0 +1,235 @@
+@mixin btn-border-slide($color, $hoverColor, $borderWidth, $time) {
+  $easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  position: relative;
+
+  display: inline-block;
+  padding: 0.5em 2em;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    height: $borderWidth;
+    width: 100%;
+
+    background-color: $color;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &:hover {
+    & > * {
+      & > * {
+        &:before,
+        &:after {
+          transform: translate3d(0, 0, 0);
+        }
+
+        & > * {
+          &:before,
+          &:after {
+            transform: translate3d(0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+
+  & > * {
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+
+      height: 100%;
+      width: $borderWidth;
+
+      background-color: $color;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+
+    & > * {
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        z-index: 9;
+
+        height: $borderWidth;
+        width: 100%;
+
+        background-color: $hoverColor;
+      }
+
+      &:before {
+        top: 0;
+
+        transform: translate3d(-105%, 0, 0);
+        transition: transform $time $easing;
+      }
+
+      &:after {
+        bottom: 0;
+
+        transform: translate3d(105%, 0, 0);
+        transition: transform $time $easing;
+      }
+
+      & > * {
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          z-index: 9;
+
+          height: 100%;
+          width: $borderWidth;
+
+          background-color: $hoverColor;
+        }
+
+        &:before {
+          left: 0;
+
+          transform: translate3d(0, 105%, 0);
+          transition: transform $time $easing;
+        }
+
+        &:after {
+          right: 0;
+
+          transform: translate3d(0, -105%, 0);
+          transition: transform $time $easing;
+        }
+      }
+    }
+  }
+}
+
+.header-wrapper {
+  width: 100%;
+  min-height: 6vh;
+  box-sizing: border-box;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+
+  color: $color-white;
+  transition: all 0.5s ease-in;
+  background-color: $color-light-theme;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.login-modal-wrapper {
+  .login-tab {
+    border-bottom: 3px solid transparent;
+    color: #646464;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      border-bottom: 3px solid $color-light-theme;
+    }
+
+    &-active {
+      border-bottom: 3px solid $color-light-theme;
+    }
+  }
+}
+
+#loginForm {
+  .social-login-group {
+    button {
+      border: 0;
+    }
+    .login-icon {
+      width: 1.35vw;
+      height: 1.35vw;
+      min-width: 26px;
+      min-height: 26px;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: fill;
+      }
+    }
+  }
+}
+
+#registrationForm {
+  // border: 1px solid red;
+}
+
+.ant-modal-content {
+  border-radius: $border-radius-8;
+}
+
+.scrolled {
+  background-color: $color-dark-theme;
+}
+
+a:hover {
+  color: $color-white;
+  text-decoration: none;
+}
+
+.header-tab {
+  // cursor: pointer;
+  text-decoration: none;
+  color: $color-white;
+
+  .border-3 {
+    border:  3px solid #dee2e6 !important;
+  }
+
+  // &:hover{
+  //     border: 1px solid $color-white;
+  //     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  // }
+
+  @include btn-border-slide(#25252500, $color-white, 2px, 0.8s);
+}
+
+.mobile-menu-drawer {
+  .ant-menu-item-selected {
+    background-color: $color-light-theme !important;
+    color: $color-white;
+    box-shadow: 3px 3px 10px rgba($color-black, 0.5);
+  }
+
+  .ant-menu-item::after,
+  ul {
+    border-right: 0px;
+  }
+
+  .ant-menu-submenu-active,
+  .ant-menu-submenu-title:hover {
+    color: $color-light-theme;
+  }
+}

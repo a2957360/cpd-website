@@ -1,0 +1,118 @@
+.home-about-wrapper {
+    // padding-top: 3%;
+
+    .home-about-wrapper {
+        width: 62.5%;
+        margin: 0 auto;
+
+        .home-about-elements-container {
+            display: flex;
+            align-items: center;
+            // height: 27vw;
+            padding-top: 15%;
+            padding-left: 3%;
+            padding-right: 8%;
+            background-image: url('../../../img/dot-grid-hor.png');
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-position: 20% 35%;
+
+            .home-about-image {
+                width: 24vw;
+                height: 14vw;
+                float: right;
+            }
+        }
+
+        .home-about-video-wrapper {
+            background-image: url('../../../img/dot-grid-ver.png');
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-position: 80% 0%;
+
+            .home-about-block {
+                position: relative;
+                top: -5vw;
+                left: 10%;
+                // top: 5vw;
+                width: 30vw;
+                height: 10vw;
+                z-index: 2;
+            }
+            .home-about-video-container {
+                padding-top: 15%;
+                position: relative;
+                z-index: 4;
+            }
+        }
+
+        .home-about-block {
+            background-color: $color-dark-theme;
+            width: 16vw;
+            height: 8vw;
+
+            // &-sm {
+            //     width: 16vw;
+            //     height: 8vw;
+            // }
+
+            // &-lg {
+            //     width: 30vw;
+            //     height: 10vw;
+            // }
+        }
+    }
+
+    .home-about-wrapper-mobile {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5vh;
+
+        .home-about-elements-container {
+            display: flex;
+            align-items: center;
+            // height: 27vw;
+            padding-top: 15%;
+            padding-left: 5%;
+            // padding-right: 8%;
+            background-image: url('../../../img/dot-grid-hor.png');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: 82% 45%;
+            background-size: 90px 65px;
+
+            img {
+                width: 30vw;
+                height: 18vw;
+                // float: right;
+                box-shadow: 3px 3px 10px rgba($color-black, 0.5);
+            }
+        }
+
+        .home-about-block {
+            position: relative;
+            top: -10vh;
+            width: 50%;
+            height: 60px;
+            z-index: 2;
+            background-color: $color-dark-theme;
+        }
+
+        .home-about-video-container {
+            width: 80%;
+            margin: 3vh auto 0;
+            // padding-top: 15%;
+            position: relative;
+            z-index: 4;
+
+            .video {
+                background-color: $color-light-theme;
+                max-width: 95%;
+            }
+        }
+    }
+    // .home-about-title-wrapper {
+    //     width: 62.5%;
+
+    // }
+}

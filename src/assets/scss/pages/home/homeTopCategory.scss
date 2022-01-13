@@ -1,0 +1,93 @@
+.home-top-category-wrapper {
+  margin: 3vh auto;
+  // padding-top: 10vh;
+
+  .home-top-category-title-container {
+    background-image: url('../../../img/dot-grid-ver.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 55vw 30%;
+    // height: 25vh;
+    // max-height: 160px;
+    margin-bottom: 2%;
+    padding-top: 2vh;
+
+    @media screen and (max-width: 767px) {
+      background-position: 55vw 30%;
+      background-size: 30vw;
+    }
+
+    & p:nth-of-type(2) {
+      // width: 40%;
+      margin: inherit auto;
+      @media screen and (max-width: 767px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .home-category-preview-container {
+    width: 62.5%;
+
+    @media screen and (max-width: 991px) {
+      width: 90%;
+    }
+    
+    .category-hover {
+      cursor: pointer;
+    }
+
+    .single-category-container {
+      overflow: hidden;
+      width: 95%;
+      // height: 10vw;
+      // min-height: 100px;
+
+      .home-top-category-cover {
+        object-fit: fill;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .home-category-content {
+        width: 95%;
+        height: 8rem;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 10%;
+        color: white;
+        background-image: linear-gradient(to top, #3dafbe, rgba(255, 255, 255, 0));
+        position: absolute;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+
+        .home-category-title {
+          line-height: 2.5rem;
+          font-size: 1.9rem;
+          font-weight: 400;
+          // padding-bottom: 15%;
+          transition: all 0.3s ease-in-out;
+        }
+        .home-category-subtitle {
+          font-size: 2rem;
+          font-weight: 300;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+      }
+
+      &:hover {
+        .home-top-category-cover {
+          transform: scale(1.2, 1.2);
+        }
+        .home-category-content {
+          height: 100%;
+          padding-top: 30%;
+
+          .home-category-subtitle {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.ant-tabs-nav-list {
+    background-color: $color-white;
+    border-radius: $border-radius-8;
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ant-tabs-ink-bar {
+    border-bottom: 0.8rem solid $color-light-theme;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $color-dark-grey-2;
+}
+
+.ant-tabs-tab-btn {
+    font-size: $font-size-16;
+    color: $color-light-grey-2;
+
+    &:hover {
+        color: $color-light-grey-2;
+    }
+}
+
+.ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    border-bottom: none;
+}

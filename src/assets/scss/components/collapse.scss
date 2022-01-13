@@ -1,0 +1,22 @@
+.ant-collapse-header {
+    font-size: $font-size-16;
+    margin-left: 1.5rem;
+}
+
+.ant-collapse-ghost {
+    .ant-collapse-item {
+        .ant-collapse-content {
+            .ant-collapse-content-box {
+                padding: 0rem 0rem;
+            }
+        }
+    }
+}
+
+.ant-collapse-icon-position-right {
+    .ant-collapse-item {
+        .ant-collapse-header {
+            padding: 1rem 0rem;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.certificate-feature {
+    .feature-container {
+        margin: 3rem 0rem;
+        width: 80%;
+
+        @include respond(large-desktop) {
+            width: 90%;
+        }
+
+        @include respond(phone) {
+            width: 80%;
+        }
+
+        .feature-item {
+            margin: 3rem 0rem;
+
+            .feature-image {
+                height: 8rem;
+                width: 8rem;
+
+                @include respond(phone) {
+                    height: 12rem;
+                    width: 12rem;
+                }
+            }
+        }
+    }
+    
+}
+.certificate-banner {
+    height: auto;
+    width: 350px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    // top: -50px;
+    z-index: 99;
+    // margin-left: 200px;
+
+    &-title {
+        
+    }
+}
+.banner-box {
+    width: 800px;
+    height: 350px;
+    // background-color: #f0f2f5;
+    margin-bottom: 150px;
+    border-radius: 10px;
+    // margin: '0 auto'
+    text-align: center;
+}
+.carousel-box {
+    .slick-dots li button {
+        width: 15px !important ;
+        height: 15px !important;
+        background: #aaa !important; // 改变dots的颜色
+        border-radius: 50% !important;
+    }
+    .slick-dots li {
+    width: 23px !important ;
+    }
+    .ant-carousel .slick-dots li.slick-active button {
+        width: 20px !important ;
+        height: 20px !important;
+        background-color: $color-light-theme !important; // 改变dots的颜色;
+        border-radius: 50% !important;
+    }
+    .ant-carousel .slick-dots-bottom{
+        bottom: -12% !important;
+    }
+}

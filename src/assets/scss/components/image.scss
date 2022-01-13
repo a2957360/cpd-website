@@ -1,0 +1,16 @@
+.image-container {
+    &--enlarge {
+        overflow: hidden;
+
+        .image {
+            &--enlarge {
+                transition: all 0.3s ease-in-out;
+    
+                &:hover {
+                    transform: scale(1.2, 1.2);
+                }
+            }
+        }
+    }
+}
+

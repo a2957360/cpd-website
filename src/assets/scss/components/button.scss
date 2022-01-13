@@ -1,0 +1,119 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-16;
+  padding: 1rem 3rem;
+
+  &--fs-22 {
+    font-size: 2.2rem !important;
+  }
+
+  &--grey {
+    background-color: $color-light-grey-1;
+  }
+
+  &-white-border {
+    border: 1px solid $color-white;
+  }
+
+  &--light-hover-white {
+    background-color: $color-light-theme;
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+      color: $color-dark-grey-1;
+    }
+  }
+
+  &--light-hover-dark {
+    background-color: $color-light-theme;
+    color: $color-white;
+    font-weight: 800;
+    &:hover,
+    &:focus {
+      background-color: $color-dark-theme;
+    }
+  }
+
+  &--dark-hover-white {
+    background-color: $color-dark-theme;
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+      color: $color-dark-grey-1;
+    }
+  }
+
+  &--white-hover-white {
+    border: 1px solid $color-dark-grey-1;
+    background-color: $color-white;
+    color: $color-dark-grey-1;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $color-white;
+      background-color: $color-white;
+      color: $color-dark-grey-1;
+    }
+  }
+
+  &--opacity-to-light {
+    background-color: $color-light-theme;
+    color: $color-white;
+    opacity: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: $color-light-theme;
+      opacity: 100%;
+    }
+  }
+
+  &--white-to-light {
+    background-color: $color-white;
+    color: $color-dark-grey-1;
+    border: 1px solid $color-dark-grey-1;
+
+    &:hover,
+    &:focus {
+      background-color: $color-light-theme;
+      color: $color-white;
+      border: 1px solid $color-light-theme;
+    }
+  }
+
+  &--chevron {
+    padding: 2.5rem 1.5rem;
+  }
+
+  &--animated {
+    &:hover,
+    &:focus {
+      box-shadow: 0.3rem 0.3rem 0.5rem rgba($color-black, 0.5);
+      transform: scale(0.9, 0.9);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+.button-primary {
+  font-size: $font-size-16;
+  padding: 1rem 4rem;
+  border: 1px solid $color-white;
+  background-color: $color-light-theme;
+  color: $color-white;
+  transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: $color-white;
+    color: $color-dark-grey-1;
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba($color-black, 0.5);
+    transform: scale(0.9, 0.9);
+  }
+}

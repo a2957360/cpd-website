@@ -1,0 +1,49 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 576px:      portrait phones
+576 - 768px:    landscape phones
+768 - 992px:    tablets
+992 - 1200px:   desktops
+1200 + :        large desktops
+
+$breakpoint arguement choices:
+- phone
+- tablet
+- desktop
+- large-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+// xs --- Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// sm --- Small devices (phones, less than 768px)
+$breakpoint-phone: 576px;
+
+// md --- Medium devices (tablets, 768px and up)
+$breakpoint-tablet: 768px;
+
+// lg --- Large devices (desktops, 992px and up)
+$breakpoint-desktop: 992px;
+
+// xl --- Extra large devices (large desktops, 1200px and up)
+$breakpoint-large-desktop: 1200px;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 36em) { @content };    //576px
+    }
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 48em) { @content };    //768px
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 62em) { @content };    //992px
+    }
+    @if $breakpoint == large-desktop {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+}
+

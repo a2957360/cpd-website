@@ -1,0 +1,83 @@
+.bookmark-container {
+    width: 8rem;
+    height: 6rem;
+
+    .bookmark {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+
+        &--gold {
+            height: 6rem;
+            background-image: url('../../img/img-bookmark-gold.png');
+        }
+
+        &--grey {
+            height: 5rem;
+            background-image: url('../../img/img-bookmark-grey.png');
+        }
+
+        .bookmark-star {
+            margin-top: 1rem;
+            height: 2rem;
+            width: 2rem;
+
+            &--small {
+                animation: rotateBack 0.6s forwards;
+                transition: all 0.6s ease-in-out;
+            }
+
+            &--big {
+                animation: rotation 0.6s forwards;
+                transition: all 0.6s ease-in-out;
+            }
+        }
+    }
+}
+
+@keyframes rotation {
+    30% {
+        transform: rotate(72deg) scale(1.1, 1.1);
+    }
+
+    50% {
+        transform: rotate(55deg) scale(1.15, 1.15);
+    }
+
+    80% {
+        transform: rotate(72deg) scale(1.2, 1.2);
+    }
+
+    90% {
+        transform: rotate(68deg) scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: rotate(72deg) scale(1.2, 1.2);
+    }
+}
+
+@keyframes rotateBack {
+    30% {
+        transform: rotate(-72deg) scale(1.15, 1.15);
+    }
+
+    50% {
+        transform: rotate(-50deg) scale(1.1, 1.1);
+    }
+
+    80% {
+        transform: rotate(-72deg) scale(1.0, 1.0);
+    }
+
+    90% {
+        transform: rotate(-68deg) scale(1.0, 1.0);
+    }
+
+    100% {
+        transform: rotate(-72deg) scale(1.0, 1.0);
+    }
+}
